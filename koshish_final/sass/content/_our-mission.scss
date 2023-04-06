@@ -1,0 +1,121 @@
+.our-mission {
+    max-width: 1366px;
+    margin: 0 auto;
+
+    &__container {
+        max-width: 1123px;
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        gap: 43px;
+    }
+
+    &__img {
+        width: 50%;
+
+        & img {
+            max-width: 553px;
+            width: 100%;
+            border-radius: 24px;
+        }
+    }
+
+    &__text {
+        width: 50%;
+
+        & h2 {
+            margin-top: -10px;
+            font-family: $font-poppins;
+            font-size: 42px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.42;
+            letter-spacing: normal;
+            text-align: left;
+            color: $terterary;
+
+            & span {
+                color: $tomato;
+            }
+        }
+
+        & p {
+            max-width: 95%;
+            padding-top: 7px;
+            font-family: $font-lato;
+            font-size: 16px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.5;
+            letter-spacing: 0.16px;
+            text-align: left;
+            color: $terterary;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .our-mission {
+
+        &__container {
+            max-width: 800px;
+            margin: 0 auto;
+            width: 100%;
+            flex-wrap: wrap;
+            gap: 43px;
+        }
+
+        &__img {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            & img {
+                max-width: 553px;
+                width: 100%;
+                border-radius: 24px;
+            }
+        }
+
+        &__text {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            & h2 {
+                font-family: $font-poppins;
+                font-size: 42px;
+                font-weight: bold;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.42;
+                letter-spacing: normal;
+                text-align: left;
+                color: $terterary;
+
+                & span {
+                    color: $tomato;
+                }
+            }
+
+            & p {
+                max-width: 90%;
+                padding-top: 10px;
+                font-family: $font-lato;
+                font-size: 16px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.5;
+                letter-spacing: 0.16px;
+                text-align: left;
+                color: $terterary;
+            }
+        }
+    }
+}
